@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Data Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Data Insights</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Welcome to Data Insights</h2>
+            <p>Help us improve by sharing your information and browsing experience.</p>
+        </section>
+
+        <section class="registration-section">
+            <h3>Get Started</h3>
+            <p class="consent-notice">
+                ✓ We collect basic information, behavioral data, and technical details to improve our service.
+                <br>
+                <a href="privacy.html" target="_blank">Read our Privacy Policy</a> to learn how we use your data.
+            </p>
+            
+            <form id="registrationForm" class="form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" min="13" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="consent" name="consent" required>
+                        I consent to data collection as described in the Privacy Policy *
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                ✓ Thank you! Your information has been recorded.
+            </div>
+        </section>
+
+        <section class="features">
+            <h3>What We Track</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>📋 Basic Info</h4>
+                    <p>Name, Email, Age</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📊 Behavioral</h4>
+                    <p>Page views, Time spent, Clicks</p>
+                </div>
+                <div class="feature-card">
+                    <h4>💻 Technical</h4>
+                    <p>Browser, Device, Location</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🔒 Privacy</h4>
+                    <p>Full transparency & control</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Data Insights. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script src="tracker.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
